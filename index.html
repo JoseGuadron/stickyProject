@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Notes</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">    
+
+    <!-- CSS content-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/82d3a549ab.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sticky.css">
+    <link rel="stylesheet" href="css/toDo.css">
+
+    <!-- Script Content-->
+    
+    
+    <script src="js/jquery-1.6.2.min.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="sideBar"> 
+            
+            <nav class="navButtons">
+                    <i class="fas fa-sticky-note fa-3x" id="addNote"></i>
+                    <br><br>
+                    <i class="fas fa-clipboard-check fa-3x" id="addToDo"></i>
+                    <br><br>
+                    <i class="far fa-bell fa-3x" id="addAlarm"></i>
+            </nav>
+        </div>
+
+        <div class="stickySide" id="stickySide">
+
+
+
+        </div>
+
+                <div class="toDoSide" id="toDoSide">
+                    <div id="myDIV" class="header">
+                        <h2>TO DO</h2>
+                        <input type="text" id="myInput" placeholder="Title...">
+                        <span onclick="newElement()" class="addBtn">Add</span>
+                      </div>
+                      
+                      <ul id="myUL">
+                      </ul>
+            
+                 </div>
+
+                <div class="popedAlarm" id="popedAlarm">
+                        <p class="headerPoped">Create an Alarm</p>
+                    <div class="currentTime">
+                        
+                        <div class="time" id="time"></div>
+                    </div>
+                    <div class="inputContainer">
+                    <input class="timerInput" placeholder="hours" type="number" id="hours" requiered max="23" min="00">
+                    <input class="timerInput" placeholder="minutes" type="number" id="minutes" requiered max="59" min="00">
+                    <p style="font-size:10px; margin-left:25px;"> *24hrs format</p>
+                    <i class="fas fa-check-circle fa-3x saveAlarm" id="saveAlarm"></i>
+                </div>                  
+
+                </div>                  
+       
+    </div>
+
+
+</div>
+
+    </div>
+
+    <!-- Script Content-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/toDo.js"></script>
+    <script src="js/sticky.js"></script>
+    <script src="js/time.js"></script>
+    <script>
+
+    </script>
+    
+</body>
+</html>
